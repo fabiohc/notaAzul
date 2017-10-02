@@ -12,6 +12,10 @@ public class Questao {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer id;
 	
+	private String pergunta;
+	
+	private String imagem;
+	
 	private String itemA;
 	
 	private String itemB;
@@ -23,6 +27,22 @@ public class Questao {
 	private String itemE;
 	
 	private String resposta;
+	
+	public String getPergunta() {
+		return pergunta;
+	}
+
+	public void setPergunta(String pergunta) {
+		this.pergunta = pergunta;
+	}
+
+	public String getImagem() {
+		return imagem;
+	}
+
+	public void setImagem(String imagem) {
+		this.imagem = imagem;
+	}
 
 	public String getItemA() {
 		return itemA;
